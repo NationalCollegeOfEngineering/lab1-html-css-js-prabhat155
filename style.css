@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+div,
+header,
+section,
+footer,
+article,
+aside {
+  border: 1px solid black;
+}
+header.top-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 40px;
+  margin-top: 20px;
+}
+header.top-header ul {
+  display: flex;
+  list-style-type: none;
+  gap: 15px;
+}
+header.top-header li {
+  border: 1px solid black;
+  padding: 10px;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+}
+article,
+aside {
+  flex: 1;
+}

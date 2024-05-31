@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      div,
+      header,
+      section,
+      footer,
+      article,
+      aside {
+        border: 1px solid black;
+      }
+      header.top-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 40px;
+        margin-top: 20px;
+      }
+      header.top-header ul {
+        display: flex;
+        list-style-type: none;
+        gap: 15px;
+      }
+      header.top-header li {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      section {
+        display: flex;
+        justify-content: space-between;
+      }
+      article,
+      aside {
+        flex: 1;
+      }
+      header.top-header {
+        height: 100px;
+      }
+
+      @media screen and (max-width: 768px) {
+        ul {
+          flex-direction: column;
+        }
+        header.top-header {
+          height: auto;
+        }
+        section {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="top-header">
+      <div>LOGO</div>
+      <ul>
+        <li>Home</li>
+        <li>About Us</li>
+        <li style="order: -1">Contact Us</li>
+      </ul>
+    </header>
+    <section style="min-height: 400px">
+      <article>
+        <form action="" method="post">
+          Username: <input type="text" name="un" id="" /> Password:<input
+            type="password"
+            name="pw"
+            id=""
+          />
+          <input type="submit" value="Login" />
+          Don't have account? <a href="signup.php">Signup</a>
+        </form>
+      </article>
+      <aside>Sidebar</aside>
+    </section>
+    <footer style="height: 200px">Footer</footer>
+  </body>
+</html>
